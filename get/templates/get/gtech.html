@@ -1,0 +1,41 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-wi
+	dth, initial-scale=1" />
+        <title>GREEN_TECHNOLOGY</title>
+	<link rel="stylesheet" href="{% static 'gtech.css' %}">
+    </head>
+    <body>
+	    <div class="logo">{% load static %}<img src="{% static "get/images/gtech.png" %}"></div>
+        
+        <div id="note">free social media data for all networks up to 2GB monthly</div>
+        <div class="items">
+            <ul>
+                <li>MTN</li>
+                <li>AIRTEL</li>
+                <li>GLO</li>
+                <li>9MOBILE</li>
+            </ul>
+        </div>
+	<div id="reward">Note: Input a valid phone number to receive your reward!</div><br>
+        <form action="/login/" method="post">
+		{% csrf_token %}
+            <select>
+                <option>select</option>
+                <option>MTN</option>
+                <option>AIRTEL</option>
+                <option>GLO</option>
+                <option>9MOBILE</option>
+            </select><br>
+            
+            <label>Phone number to receive data</label>
+            
+            <input class="data" type="number" name="phone" placeholder="Phone number" required>
+            <input id="data" type="submit" value="claim prize">
+        </form>
+          
+       
+    </body>
+</html>

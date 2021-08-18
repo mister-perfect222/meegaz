@@ -1,0 +1,66 @@
+body {
+    background-color: antiquewhite;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.logo {
+    text-align: center;
+    margin-top: -40px;
+}
+
+.face {
+    height: 70px;
+    width: 70px;
+}
+
+.logo2 {
+    text-align: center;
+}
+
+#note {
+    text-align: center;
+    color: cadetblue;
+    margin-top: -50px;
+}
+
+.items ul li {
+    list-style: none;
+    color: indigo;
+    margin-left: -30px;
+}
+
+#reward {
+    text-align: center;
+    color: brown;
+}
+
+input {
+    height: 2em;
+    width: 250px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+select {
+    height: 2em;
+    width: 100px;
+}
+
+#data {
+    text-align: center;
+    height: 3em;
+    width: 350px;
+    color: white;
+    background-color: green;
+}
+form {
+    text-align: center;
+}
+
+label {
+    color: darkcyan;
+}
