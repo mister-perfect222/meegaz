@@ -1,1 +1,1 @@
-web: gunicorn phishing.wsgi
+web: gunicorn tech.wsgi
